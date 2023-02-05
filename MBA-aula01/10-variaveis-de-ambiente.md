@@ -3,7 +3,7 @@
 Vamos entender como funcionam as variáveis de ambiente no Docker, portanto vamos subir agora o banco de dados MySQL usando docker
 
 ````sh
-docker run -d -e MYSQL_ROOT_PASSWORD=root -p 3306:3306 --name=meu-banco mysql:8.0
+docker run -d -e MYSQL_ROOT_PASSWORD=root --name=meu-banco mysql:8.0
 ````
 
 Desta vez estamos passando uma variável de ambiente para o contêiner, definindo a senha do usuário root de banco como "root", para saber se o MySQL subiu execute o comando abaixo
